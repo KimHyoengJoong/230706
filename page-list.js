@@ -21,10 +21,10 @@ async function fetch(pageno=1, pagesize = 10) {
 
 function printContacts(contacts) {
     const $tbody = $('#tbody');
-
     for (c of contacts) {        
         const html = `
-        <tr>${c.no}</td>
+        <tr>
+          <td>${c.no}</td>
           <td>
             <a href="page-read.html?no=${c.no}">${c.name}</a>
           </td>
